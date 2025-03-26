@@ -1,0 +1,70 @@
+{
+  "layer": "top",
+  "spacing": 0,
+  "height": 0,
+  "margin-top": 1,
+  "margin-right": 5,
+  "margin-bottom": 0,
+  "margin-left": 5,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "tray",
+    "cpu",
+    "memory",
+    "network",
+    "bluetooth",
+    "pulseaudio"
+  ],
+  "hyrpland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "tooltip": false
+  },
+  "tray": {
+    "spacing": 10,
+    "tooltip": false
+  },
+  "clock": {
+    "format": "{:%H:%M - %a, %d %b %Y}",
+    "tooltip": false
+  },
+  "cpu": {
+    "format": "cpu {usage}%",
+    "interval": 2,
+    "states": {
+      "critical": 90
+    },
+    "on-click": "kitty btop"
+  },
+  "memory": {
+    "format": "ram {percentage}%",
+    "interval": 2,
+    "states": {
+      "critical": 80
+    }
+  },
+  "network": {
+    "format-wifi": "wifi {bandwidthDownBits}",
+    "format-ethernet": "enth {bandwidthDownBits}",
+    "format-disconnected": "no network",
+    "interval": 5,
+    "tooltip": false
+  },
+  "bluetooth": {
+    "on-click": "blueman-manager"
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 100,
+    "format": "vol {volume}%",
+    "format-bluetooth": "vol {volume}%",
+    "nospacing": 1,
+    "on-click": "pavucontrol-qt",
+    "tooltip": false
+  }
+}

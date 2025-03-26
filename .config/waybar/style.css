@@ -1,0 +1,52 @@
+@import "mocha.css";
+
+* {
+    color: @text;
+    font-family: "iosevka nerd font";
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 15px;
+    padding: 0px 8px;
+}
+
+window#waybar {
+    background: shade(@base, 0.9);
+    border: 2px solid alpha(@crust, 0.3);
+}
+
+tooltip {
+    border: 2px solid #7c6f64;
+}
+
+#clock,
+#tray,
+#cpu,
+#memory,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio {
+    margin: 3px 3px 3px 0px;
+    background-color: @crust;
+    background: @crust;
+}
+
+#workspaces button {
+    border: 2px solid alpha(@crust, 0.3);
+    margin: 3px 3px 3px 0px;
+    background-color: @crust;
+    padding: 0px 4px;
+}
+
+#workspaces button.active {
+    background-color: @lavender;
+}
+
+
+#cpu.critical,
+#memory.critical {
+    background-color: #ddc7a1;
+    border: 2px solid #c7ab7a;
+    color: #c14a4a;
+}
+
