@@ -16,7 +16,6 @@
     "tray",
     "cpu",
     "memory",
-    "network",
     "bluetooth",
     "pulseaudio"
   ],
